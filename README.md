@@ -54,10 +54,13 @@ MainActivity里配置：
        view.findViewById<View>(R.id.navigate_destination_button).setOnClickListener(
             Navigation.createNavigateOnClickListener(R.id.next_action)
         )
+     
+     
  方法2：
  view.findViewById<Button>(R.id.navigate_destination_button)?.setOnClickListener {
             findNavController().navigate(R.id.flow_step_one_dest, null, null)
         }
+        
         
         
 3、在res里新建文件夹navigation 类型选择Navigation，然后在这个文件夹里创建mobile_navigation.xml
